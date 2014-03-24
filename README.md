@@ -1,4 +1,4 @@
-Twitter Bootstrap Navbar with Multiple Dropdowns (Childrens)
+Twitter Bootstrap Responsive Navbar with Multiple Dropdowns (Childrens)
 ==========================
 
 <img src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen.png" />
