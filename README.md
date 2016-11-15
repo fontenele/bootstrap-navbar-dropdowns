@@ -1,6 +1,8 @@
 Twitter Bootstrap Responsive Navbar with Multiple Dropdowns (Childrens)
 ==========================
 
+[Bootsnipp](http://bootsnipp.com/snippets/featured/multi-level-navbar-menu)
+
 Tested on Bootstrap v3.1.1 and jQuery v1.11.0
 Try demo [Here](http://fontesolutions.com.br/bootstrap-navbar-dropdowns/)
 
