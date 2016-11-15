@@ -6,7 +6,7 @@ Try demo [Here](http://fontesolutions.com.br/bootstrap-navbar-dropdowns/)
 
 <div style="text-align:center;">
     <img src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen.png" />
-    <img style="width: 400px;margin: auto;" src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen-collapsed.png" />
+    <img width="400" style="width: 400px;margin: auto;" src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen-collapsed.png" />
 </div>
 
 ==========================
