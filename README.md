@@ -4,9 +4,9 @@ Twitter Bootstrap Responsive Navbar with Multiple Dropdowns (Childrens)
 Tested on Bootstrap v3.1.1 and jQuery v1.11.0
 Try demo [Here](http://fontesolutions.com.br/bootstrap-navbar-dropdowns/)
 
-<div style="text-align:center;">
-    <img src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen.png" />
-    <img width="400" style="width: 400px;margin: auto;" src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen-collapsed.png" />
+<div style="text-align:center;" align="center">
+    <img align="center" src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen.png" />
+    <img align="center" width="400" style="width: 400px;margin: auto;" src="https://raw.githubusercontent.com/fontenele/bootstrap-navbar-dropdowns/master/printscreen-collapsed.png" />
 </div>
 
 ==========================
