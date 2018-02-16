@@ -1,5 +1,16 @@
 @media (min-width: 767px) {
     .navbar-nav .dropdown-menu .caret {
-	transform: rotate(-90deg);
+        transform: rotate(-90deg);
     }
+}
+
+.navbar-right .dropdown-menu li a .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-bottom: 4px dashed;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
 }
