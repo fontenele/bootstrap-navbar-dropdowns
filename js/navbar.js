@@ -1,22 +1,29 @@
 $(document).ready(function () {
-    $('.navbar a.dropdown-toggle').on('click', function (e) {
-        var $el = $(this);
-        var $parent = $(this).offsetParent(".dropdown-menu");
+
+    $('.navbar .dropdown-item').on('click', function (e) {
+        var $el = $(this).children('.dropdown-toggle');
+        var $parent = $el.offsetParent(".dropdown-menu");
         $(this).parent("li").toggleClass('open');
 
-        console.log(45, $parent.closest('.nav'));
-        if (!$parent.parent().hasClass('nav')) {
-            if ($parent.closest('.nav').hasClass('navbar-right')) {
-                console.log('aaa');
-                $el.next().css({"top": $el[0].offsetTop, "right": $parent.outerWidth() - 4});
+        if (!$parent.parent().hasClass('navbar-nav')) {
+            if ($parent.hasClass('show')) {
+                $parent.removeClass('show');
+                $el.next().removeClass('show');
+                $el.next().css({"top": -999, "left": -999});
             } else {
-                console.log('bbb');
+                $parent.parent().find('.show').removeClass('show');
+                $parent.addClass('show');
+                $el.next().addClass('show');
                 $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
             }
+            e.preventDefault();
+            e.stopPropagation();
         }
-
-        $('.nav li.open').not($(this).parents("li")).removeClass("open");
-
-        return false;
     });
+
+    $('.navbar .dropdown').on('hidden.bs.dropdown', function () {
+        $(this).find('li.dropdown').removeClass('show open');
+        $(this).find('ul.dropdown-menu').removeClass('show open');
+    });
+
 });
