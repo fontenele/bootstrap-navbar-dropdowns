@@ -1,4 +1,4 @@
-Twitter Bootstrap Responsive Navbar with Multiple Dropdowns (Childrens)
+[Twitter Bootstrap Responsive Navbar with Multiple Dropdowns (Childrens)](http://fontenele.github.io/bootstrap-navbar-dropdowns/)
 ==========================
 
 ### Now with Bootstrap 4!
@@ -6,7 +6,6 @@ Twitter Bootstrap Responsive Navbar with Multiple Dropdowns (Childrens)
 [Bootsnipp](http://bootsnipp.com/snippets/featured/multi-level-navbar-menu)
 
 Tested on Bootstrap v4.1.3 and jQuery slim v3.3.1
-Try demo [Here](http://fontesolutions.com.br/bootstrap-navbar-dropdowns/)
 
 <div style="text-align:center;" align="center">
     <h4>Large</h4>
