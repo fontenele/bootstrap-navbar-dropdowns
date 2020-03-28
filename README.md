@@ -1,13 +1,22 @@
 # [Twitter Bootstrap 4 Responsive Navbar with Multiple Dropdowns](http://fontenele.github.io/bootstrap-navbar-dropdowns/)
 
+[![npm version](https://img.shields.io/npm/v/bootstrap-navbar-dropdowns.svg)](https://www.npmjs.com/package/bootstrap-navbar-dropdowns)
+[![License](https://img.shields.io/npm/l/bootstrap-navbar-dropdowns.svg)][license]
 [![Build Status](https://github.com/fontenele/bootstrap-navbar-dropdowns/workflows/Test/badge.svg)](https://github.com/fontenele/bootstrap-navbar-dropdowns/actions?workflow=Test)
 [![devDependency Status](https://david-dm.org/fontenele/bootstrap-navbar-dropdowns/dev-status.svg)](https://david-dm.org/fontenele/bootstrap-navbar-dropdowns?type=dev)
 
-[fontenele.github.io/bootstrap-navbar-dropdowns.io](http://fontenele.github.io/bootstrap-navbar-dropdowns/)
+## Quick start
+
+Several quick start options are available:
+
+* [Download the latest release](https://github.com/fontenele/bootstrap-navbar-dropdowns/archive/v4.0.2.zip "Download Bootstrap-Navbar-Dropdowns")
+* Clone the repo: `git clone https://github.com/fontenele/bootstrap-navbar-dropdowns.git`
+* Install with [npm](https://www.npmjs.com): `npm install bootstrap-navbar-dropdowns`
+* Install with [yarn](https://yarnpkg.com): `yarn add bootstrap-navbar-dropdowns`
+
 ### Now with Bootstrap 4!
 
-[Demo/Bootsnipp](http://bootsnipp.com/snippets/featured/multi-level-navbar-menu)
-
+[Bootsnipp Demo](http://bootsnipp.com/snippets/featured/multi-level-navbar-menu)
 
 ### What's included
 
