@@ -4,17 +4,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-</head>
+    <head>
+        {% include head.html %}
+    </head>
 
-<body>
-    <div class="container py-3" id="container">
+    <body>
+        <div class="container py-3" id="container">
+            {% include header.html %}
 
-    </div>
-a
-    <a class="js-scroll-top scroll-top btn btn-primary btn-sm hidden" href="#container" hidden>
-        <span class="fas fa-caret-up fa-2x"></span>
-    </a>
-</body>
+            <h2 id="installation">Installation</h2>
+            {% include installation.html %}
+
+            <hr>
+            <h2 id="html-examples">Examples</h2>
+            {% include example.html %}
+
+            <hr>
+            {% include footer.html %}
+        </div>
+        a
+        <a class="js-scroll-top scroll-top btn btn-primary btn-sm hidden" href="#container" hidden>
+            <span class="fas fa-caret-up fa-2x"></span>
+        </a>
+    </body>
 
 </html>
