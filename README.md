@@ -49,8 +49,3 @@ Copyright Guilherme Fontenele, 2014&ndash;2020.
 Licensed under [the MIT License][license].
 
 [license]: https://github.com/fontenele/bootstrap-navbar-dropdowns/blob/master/LICENSE
-
-### Usage
-
-1. Add css to header ```<link href="css/navbar.css" rel="stylesheet">```
-2. Add js for navbar events after include jquery and bootstrap js files ```<script src="js/navbar.js"></script>```
