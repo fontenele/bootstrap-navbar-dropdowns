@@ -1,6 +1,6 @@
 {
     "name": "bootstrap-navbar-dropdowns",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "description": "Twitter Bootstrap 4 Responsive Navbar with Multiple Dropdowns",
     "main": "dist/js/index.js",
     "scripts": {
