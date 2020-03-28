@@ -1,0 +1,24 @@
+a:not([href]) {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.highlight,
+.highlight pre {
+    margin-bottom: 0;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.scroll-top:hover {
+    opacity: 1;
+}

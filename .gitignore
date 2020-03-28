@@ -1,3 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 index.php
 .idea/
+/node_modules
+/*-dist.zip
+/docs/_site/
+/docs/.jekyll-metadata

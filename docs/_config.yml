@@ -1,0 +1,28 @@
+# Dependencies
+# $ gem install rouge
+# $ rougify style base16.solarized > assets/css/highlighter.css
+highlighter: rouge
+
+# Custom variables
+repository: "https://github.com/fontenele/bootstrap-navbar-dropdowns"
+version: 4.0.0
+name: "Bootstrap-Navbar-Dropdowns"
+description: "Bootstrap 4 Navbar with multiple dropdowns"
+keywords: "bootstrap navbar dropdown jquery jquery-plugin submenu menu"
+
+author:
+  name: "Guilherme Fontenele"
+
+cdn:
+  bootstrap:
+    css: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css"
+    js:  "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"
+
+  jquery:
+    js: "https://code.jquery.com/jquery-3.4.1.slim.js"
+
+  popper:
+    js: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"
+
+  fa:
+    css: "https://use.fontawesome.com/releases/v5.12.0/css/all.css"

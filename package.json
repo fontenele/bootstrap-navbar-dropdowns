@@ -1,0 +1,42 @@
+{
+  "name": "bootstrap-navbar-dropdowns",
+  "version": "4.0.0",
+  "description": "Twitter Bootstrap 4 Responsive Navbar with Multiple Dropdowns",
+  "main": "dist/js/index.js",
+  "scripts": {
+    "test": "npm run css; npm run js",
+    "css": "npm run css-compile; npm run css-minify",
+    "css-compile": "mkdir -p dist/css; cp -rf css/*.css dist/css/",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/$npm_package_name.min.css dist/css/$npm_package_name.css",
+    "js": "npm run js-compile; npm run js-minify",
+    "js-compile": "babel --out-dir dist/js/ js/*.js",
+    "js-minify": "terser --compress --output dist/js/$npm_package_name.min.js dist/js/$npm_package_name.js",
+    "release-zip": "cd dist/ && zip -r9 $npm_package_name-$npm_package_version-dist.zip * && mv $npm_package_name-$npm_package_version-dist.zip .."
+  },
+  "repository": "fontenele/bootstrap-navbar-dropdowns.git",
+  "keywords": [
+    "bootstrap",
+    "navbar",
+    "dropdown",
+    "jquery",
+    "jquery-plugin",
+    "submenu",
+    "menu"
+  ],
+  "author": {
+    "name": "Guilherme Fontenele",
+    "url": "https://github.com/fontenele"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fontenele/bootstrap-navbar-dropdowns/issues"
+  },
+  "homepage": "http://fontenele.github.io/bootstrap-navbar-dropdowns",
+  "devDependencies": {
+    "@babel/cli": "7.7.5",
+    "@babel/core": "7.7.5",
+    "@babel/preset-env": "7.7.6",
+    "clean-css-cli": "4.3.0",
+    "terser": "4.4.2"
+  }
+}
