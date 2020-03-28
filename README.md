@@ -9,7 +9,7 @@
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/fontenele/bootstrap-navbar-dropdowns/archive/v4.0.2.zip "Download Bootstrap-Navbar-Dropdowns")
+* [Download the latest release](https://github.com/fontenele/bootstrap-navbar-dropdowns/archive/v4.0.3.zip "Download Bootstrap-Navbar-Dropdowns")
 * Clone the repo: `git clone https://github.com/fontenele/bootstrap-navbar-dropdowns.git`
 * Install with [npm](https://www.npmjs.com): `npm install bootstrap-navbar-dropdowns`
 * Install with [yarn](https://yarnpkg.com): `yarn add bootstrap-navbar-dropdowns`
