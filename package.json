@@ -1,16 +1,18 @@
 {
     "name": "bootstrap-navbar-dropdowns",
-    "version": "4.0.3",
+    "version": "4.0.4",
     "description": "Twitter Bootstrap 4 Responsive Navbar with Multiple Dropdowns",
     "main": "dist/js/index.js",
     "scripts": {
         "test": "npm run css; npm run js",
+        "build": "npm run css; npm run js",
         "css": "npm run css-compile; npm run css-minify",
         "css-compile": "mkdir -p dist/css; cp -rf css/*.css dist/css/",
         "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/$npm_package_name.min.css dist/css/$npm_package_name.css",
-        "js": "npm run js-compile; npm run js-minify",
+        "js": "npm run js-compile; npm run js-minify; npm run js-uglify",
         "js-compile": "babel --out-dir dist/js/ js/*.js",
         "js-minify": "terser --compress --output dist/js/$npm_package_name.min.js dist/js/$npm_package_name.js",
+        "js-uglify": "uglifyjs dist/js/$npm_package_name.min.js -c -m -e -o dist/js/$npm_package_name.min.js",
         "release-zip": "cd dist/ && zip -r9 $npm_package_name-$npm_package_version-dist.zip * && mv $npm_package_name-$npm_package_version-dist.zip .."
     },
     "repository": "fontenele/bootstrap-navbar-dropdowns",
@@ -37,6 +39,7 @@
         "@babel/core": "7.7.5",
         "@babel/preset-env": "7.7.6",
         "clean-css-cli": "4.3.0",
-        "terser": "4.4.2"
+        "terser": "4.4.2",
+        "uglify-js": "^3.11.2"
     }
 }
