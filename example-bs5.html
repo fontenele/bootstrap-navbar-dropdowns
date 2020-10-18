@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap NavBar</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+        <link href="dist/css/bootstrap-navbar-dropdowns-bs5.min.css" rel="stylesheet">
+        <style>
+            html,
+            body {
+                overflow-x: hidden; /* Prevent scroll on narrow devices */
+            }
+
+            body {
+                padding-top: 56px;
+            }
+
+
+        </style>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bootstrap 5 NavBar Dropdown</a>
+                <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://fontenele.github.io/bootstrap-navbar-dropdowns/" target="_blank">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-flip="false" data-toggle="dropdown" aria-expanded="false">Dropdown1</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                                <li><a class="dropdown-item" href="http://www.youtube.com" target="_blank">Action 1 - Youtube</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Dropdown1.1</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action 1.1</a></li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Dropdown1.1.1</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" target="_blank" href="http://www.google.com">Action 1.1.1 - Google</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown2" data-flip="false" data-toggle="dropdown" aria-expanded="false">Dropdown2</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                                <li><a class="dropdown-item" href="#">Action 2 A</a></li>
+                                <li><a class="dropdown-item" href="#">Action 2 B</a></li>
+                                <li><a class="dropdown-item" href="#">Action 2 C</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Dropdown2.1</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action 2.1 A</a></li>
+                                        <li><a class="dropdown-item" href="#">Action 2.1 B</a></li>
+                                        <li><a class="dropdown-item" href="#">Action 2.1 C</a></li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Dropdown2.1.1</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action 2.1.1 A</a></li>
+                                                <li><a class="dropdown-item" href="#">Action 2.1.1 B</a></li>
+                                                <li><a class="dropdown-item" href="#">Action 2.1.1 C</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Dropdown2.1.2</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action 2.1.2 A</a></li>
+                                                <li><a class="dropdown-item" href="#">Action 2.1.2 B</a></li>
+                                                <li><a class="dropdown-item" href="#">Action 2.1.2 C</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="align-items-center p-3 my-3 rounded shadow-sm text-center">
+                <div class="lh-1">
+                    <h1 class="h1 mb-0 lh-1">Bootstrap NavBar</h1>
+                    <div class="mt-2">NavBar with too many childs.</div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+
+        <script src="dist/js/bootstrap-navbar-dropdowns.min.js"></script>
+        <script>
+            $('.navbar').navbarDropdown({theme: 'bs5', trigger: 'mouseover'});
+        </script>
+    </body>
+</html>

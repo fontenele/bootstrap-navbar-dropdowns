@@ -1,16 +1,19 @@
 {
     "name": "bootstrap-navbar-dropdowns",
-    "version": "4.0.4",
+    "version": "5.0.0",
     "description": "Twitter Bootstrap 4 Responsive Navbar with Multiple Dropdowns",
     "main": "dist/js/index.js",
     "scripts": {
         "test": "npm run css; npm run js",
         "build": "npm run css; npm run js",
-        "css": "npm run css-compile; npm run css-minify",
-        "css-compile": "mkdir -p dist/css; cp -rf css/*.css dist/css/",
-        "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/$npm_package_name.min.css dist/css/$npm_package_name.css",
+        "css": "npm run css-compile; npm run css-minify-bs3; npm run css-minify-bs4; npm run css-minify-bs5; npm run css-minify-all",
         "js": "npm run js-compile; npm run js-minify; npm run js-uglify",
+        "css-compile": "mkdir -p dist/css; cp -rf css/*.css dist/css/",
         "js-compile": "babel --out-dir dist/js/ js/*.js",
+        "css-minify-bs3": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/$npm_package_name-bs3.min.css dist/css/$npm_package_name-bs3.css",
+        "css-minify-bs4": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/$npm_package_name-bs4.min.css dist/css/$npm_package_name-bs4.css",
+        "css-minify-bs5": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/$npm_package_name-bs5.min.css dist/css/$npm_package_name-bs5.css",
+        "css-minify-all": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/$npm_package_name.min.css dist/css/$npm_package_name.css",
         "js-minify": "terser --compress --output dist/js/$npm_package_name.min.js dist/js/$npm_package_name.js",
         "js-uglify": "uglifyjs dist/js/$npm_package_name.min.js -c -m -e -o dist/js/$npm_package_name.min.js",
         "release-zip": "cd dist/ && zip -r9 $npm_package_name-$npm_package_version-dist.zip * && mv $npm_package_name-$npm_package_version-dist.zip .."

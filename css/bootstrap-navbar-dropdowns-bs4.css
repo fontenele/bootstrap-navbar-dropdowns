@@ -1,0 +1,28 @@
+.nv-dropdown-bs4 .dropdown-toggle, .nv-dropdown-bs4 .dropdown-menu a {
+    cursor: pointer;
+}
+
+.nv-dropdown-bs4 .dropdown-item.active, .nv-dropdown-bs4 .dropdown-item:active {
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.nv-dropdown-bs4 .dropdown-item:focus, .nv-dropdown-bs4 .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+@media (min-width: 767px) {
+    .nv-dropdown-bs4 .dropdown-toggle:not(.nav-link)::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .5em;
+        vertical-align: 0;
+        border-bottom: .3em solid transparent;
+        border-top: .3em solid transparent;
+        border-left: .3em solid;
+    }
+}
