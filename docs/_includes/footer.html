@@ -1,3 +1,8 @@
 <footer class="text-center text-muted">
     &copy; {{ site.author.name }}, 2014&ndash;{{ site.time | date: '%Y' }}
 </footer>
+<script>
+    $(document).ready(function () {
+        $('.navbar').navbarDropdown({theme: 'bs4', trigger: 'mouseover'});
+    });
+</script>
