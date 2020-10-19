@@ -5,9 +5,9 @@ highlighter: rouge
 
 # Custom variables
 repository: "https://github.com/fontenele/bootstrap-navbar-dropdowns"
-version: 4.0.0
+version: 5.0.2
 name: "Bootstrap-Navbar-Dropdowns"
-description: "Bootstrap 4 Navbar with multiple dropdowns"
+description: "Bootstrap Navbar with multiple dropdowns"
 keywords: "bootstrap navbar dropdown jquery jquery-plugin submenu menu"
 
 author:
@@ -26,4 +26,8 @@ cdn:
 
   fa:
     css: "https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+
+  navbardropdown:
+    css: "https://cdn.jsdelivr.net/gh/fontenele/bootstrap-navbar-dropdowns@5.0.2/dist/css/bootstrap-navbar-dropdowns.min.css"
+    js: "https://cdn.jsdelivr.net/gh/fontenele/bootstrap-navbar-dropdowns@5.0.2/dist/js/bootstrap-navbar-dropdowns.min.js"
 theme: jekyll-theme-tactile
