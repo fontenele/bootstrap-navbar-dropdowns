@@ -25,9 +25,7 @@
     }
 
     $(this).addClass("nv-dropdown-" + options.theme);
-    console.log('selector', options.trigger, $(this).find(options.dropdownSelector));
     $(this).find(options.dropdownSelector).on(options.trigger, function (e) {
-      console.log('clicjed', this);
       var $el = $(this).children('.dropdown-toggle');
 
       if ($el.length > 0 && $(e.target).hasClass('dropdown-toggle')) {
