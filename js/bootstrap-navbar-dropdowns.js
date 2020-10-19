@@ -22,7 +22,7 @@
 
         $(this).addClass(`nv-dropdown-${options.theme}`);
         $(this).find(options.dropdownSelector).on(options.trigger, function (e) {
-            var $el = $(this).children('.dropdown-toggle');
+            const $el = $(this).children('.dropdown-toggle');
             if ($el.length > 0 && $(e.target).hasClass('dropdown-toggle')) {
                 var $parent = $el.offsetParent(".dropdown-menu");
                 $(this).parent("li").toggleClass('open');
