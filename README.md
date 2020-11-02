@@ -1,48 +1,59 @@
-# [Twitter Bootstrap Responsive Navbar with Multiple Dropdowns](http://fontenele.github.io/bootstrap-navbar-dropdowns/)
+# [Bootstrap Navbar Dropdowns](http://fontenele.github.io/bootstrap-navbar-dropdowns/)
 
 [![npm version](https://img.shields.io/npm/v/bootstrap-navbar-dropdowns.svg)](https://www.npmjs.com/package/bootstrap-navbar-dropdowns)
 [![License](https://img.shields.io/npm/l/bootstrap-navbar-dropdowns.svg)][license]
 [![Build Status](https://github.com/fontenele/bootstrap-navbar-dropdowns/workflows/Test/badge.svg)](https://github.com/fontenele/bootstrap-navbar-dropdowns/actions?workflow=Test)
-[![devDependency Status](https://david-dm.org/fontenele/bootstrap-navbar-dropdowns/dev-status.svg)](https://david-dm.org/fontenele/bootstrap-navbar-dropdowns?type=dev)
 
-## Quick start
+#### Support for bootstrap 3, 4 and 5
 
-Several quick start options are available:
-
-* [Download the latest release](https://github.com/fontenele/bootstrap-navbar-dropdowns/archive/v4.0.3.zip "Download Bootstrap-Navbar-Dropdowns")
-* Clone the repo: `git clone https://github.com/fontenele/bootstrap-navbar-dropdowns.git`
-* Install with [npm](https://www.npmjs.com): `npm install bootstrap-navbar-dropdowns`
-* Install with [yarn](https://yarnpkg.com): `yarn add bootstrap-navbar-dropdowns`
-
-### Now with Bootstrap 5!
-
-[Bootsnipp Demo](http://bootsnipp.com/snippets/featured/multi-level-navbar-menu)
-
-### What's included
-
+## Installation
+#### Node
 ```
-bootstrap-submenu/
-├── css/
-│   ├── bootstrap-navbar-dropdowns.css
-│   ├── bootstrap-navbar-dropdowns.css.map
-│   └── bootstrap-navbar-dropdowns.min.css
-└── js/
-    ├── bootstrap-navbar-dropdowns.js
-    └── bootstrap-navbar-dropdowns.min.js
+npm install boostrap-navbar-dropdowns
+```
+or
+```
+yarn add boostrap-navbar-dropdowns
 ```
 
-<div style="text-align:center;" align="center">
-    <h4>Desktop</h4>
-    <img align="center" src="https://github.com/fontenele/bootstrap-navbar-dropdowns/blob/master/printscreen.png?raw=true" />
-    <hr />
-    <h4>Mobile</h4>
-    <img align="center" src="https://github.com/fontenele/bootstrap-navbar-dropdowns/blob/master/printscreen-collapsed.png?raw=true" />
-</div>
+##### Using CDN
 
-## Min Requirements
+```
+<link href="https://cdn.jsdelivr.net/gh/fontenele/bootstrap-navbar-dropdowns@5.0.2/dist/css/bootstrap-navbar-dropdowns.min.css"rel="stylesheet">
+```
 
-* Bootstrap 4.1.3
-* jQuery 1.9.1
+```
+<script src="https://cdn.jsdelivr.net/gh/fontenele/bootstrap-navbar-dropdowns@5.0.2/dist/js/bootstrap-navbar-dropdowns.min.js"></script>
+```
+
+## Usage
+```
+$('.navbar').navbarDropdown({
+  theme: 'bs5',
+  trigger: 'mouseover'
+});
+```
+
+## Options
+
+| Name | Type | Description |
+|------|------|-------------|
+| `theme` | string | Bootstrap theme. Valid values are *bs3*, *bs4* or *bs5* |
+| `trigger` | string | Event for show dropdown content. Valid values are *all DOM Events*. |
+
+## Examples
+
+- #### Bootstrap 3
+    - [Example](https://github.com/fontenele/bootstrap-navbar-dropdowns/blob/master/example-bs3.html)
+    - [CodePen](https://codepen.io/fontenele/pen/RwRymRN)
+
+- #### Bootstrap 4
+    - [Example](https://github.com/fontenele/bootstrap-navbar-dropdowns/blob/master/example-bs4.html)
+    - [CodePen](https://codepen.io/fontenele/pen/xxOjNKy)
+
+- #### Bootstrap 5
+    - [Example](https://github.com/fontenele/bootstrap-navbar-dropdowns/blob/master/example-bs5.html)
+    - [CodePen](https://codepen.io/fontenele/pen/zYBjQom)
 
 ## Creators
 
@@ -50,6 +61,8 @@ bootstrap-submenu/
 
 * <https://github.com/fontenele>
 
+
+### [Bootstrap resoures](https://startbootstrap.com/bootstrap-resources/#plugins-menu)
 
 ## Copyright and license
 
