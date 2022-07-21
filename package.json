@@ -42,7 +42,7 @@
         "@babel/core": "7.7.5",
         "@babel/preset-env": "7.7.6",
         "clean-css-cli": "4.3.0",
-        "terser": "4.4.2",
+        "terser": "4.8.1",
         "uglify-js": "^3.11.2"
     }
 }
